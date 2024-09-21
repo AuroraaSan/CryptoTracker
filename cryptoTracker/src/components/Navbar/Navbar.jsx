@@ -1,40 +1,39 @@
-import React, { useContext } from 'react'
-import './Navbar.css'
-import logo from '../../assets/logo.png'
+import React, { useContext } from 'react';
+import './Navbar.css';
+import logo from '../../assets/logo.png';
 import arrow_icon from '../../assets/arrow_icon.png';
 import { CoinContext } from '../../context/CoinContext';
-
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+  const { setCurrency } = useContext(CoinContext);
 
-  const {setcurrency} = useContext(CoinContext)
-
-  const currencyHandler = (event)=>{
-    switch (event.target.value){
-      case "usd":{
-        setcurrency({name: "usd", symbol: "$"})
-        break
+  const currencyHandler = (event) => {
+    switch (event.target.value) {
+      case "usd": {
+        setCurrency({ name: "usd", symbol: "$" });
+        break;
       }
-      case "EUR":{
-        setcurrency({name: "eur", symbol: "%"})
-        break
+      case "eur": {
+        setCurrency({ name: "eur", symbol: "€" });
+        break;
       }
       default: {
-        setcurrency({name: "usd", symbol: "$"})
-        break
+        setCurrency({ name: "usd", symbol: "$" });
+        break;
       }
     }
-  }
+  };
+
   return (
     <div className='navbar'>
-      <link to= {`/`}>
-      <img src={logo} alt="" className='logo'/>
-      </link>
+      <Link to={`/`}>
+        <img src={logo} alt="" className='logo' />
+      </Link>
       <ul>
-      <link to= {`/`}>
-        <li>Home</li>
-        </link>
+        <Link to={`/`}>
+          <li>Home</li>
+        </Link>
         <li>Features</li>
         <li>Pricing</li>
         <li>Blog</li>
@@ -44,10 +43,10 @@ const Navbar = () => {
           <option value="usd">USD</option>
           <option value="eur">EUR</option>
         </select>
-        <button>Sign up <img src={arrow_icon}/></button>
+        <button>Sign up <img src={arrow_icon} alt="" /></button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
