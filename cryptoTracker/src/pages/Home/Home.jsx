@@ -30,8 +30,7 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='hero'>
-        <h1>Largest <br /> Cryptomarket</h1>
-        <p> Welcome</p>
+        <h1>CyptoCurrency <br /> Tracker</h1>
         <form onSubmit={searchHandler}>
           <input 
             onChange={inputHandler} 
@@ -41,11 +40,11 @@ const Home = () => {
             placeholder='Search' 
             required 
           />
-          <datalist id='coinlist'>
-            {allCoin.map((item, index) => (
-              <option key={index} value={item.name} />
-            ))}
-          </datalist>
+        <datalist id='coinlist'>
+          {allCoin.slice(0, 10).map((item, index) => (
+            <option key={index} value={item.name} />
+          ))}
+        </datalist>
           <button type="submit">Search</button>
         </form>
       </div>

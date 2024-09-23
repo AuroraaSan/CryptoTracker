@@ -1,8 +1,9 @@
-.home{
-  padding: "0px 10px";
+.home {
+  padding: 0px 10px;
   padding-bottom: 100px;
 }
-.hero{
+
+.hero {
   max-width: 600px;
   margin: 80px auto;
   display: flex;
@@ -11,16 +12,18 @@
   text-align: center;
   gap: 30px;
 }
-.hero h1{
-  font-size: max(4vw, 36px);
 
+.hero h1 {
+  font-size: max(4vw, 36px);
 }
-.hero p{
-  width: 7%;
+
+.hero p {
+  width: 80%; /* Adjusted width for better responsiveness */
   color: #e3e3e3;
   line-height: 1.5;
 }
-.hero form{
+
+.hero form {
   padding: 8px;
   width: 80%;
   background-color: white;
@@ -30,81 +33,103 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-
 }
-.hero input{
+
+.hero input {
   flex: 1;
   font-size: 16px;
   outline: none;
   border: none;
   padding-left: 10px;
 }
-.hero button{
+
+.hero button {
   border: none;
-  background: #7927ff;
+  background: #b4a333;
   color: white;
   font-size: 16px;
   padding: 10px 30px;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
-.crypto-table{
+.hero button:hover {
+  background: #29252f; /* Darker shade on hover */
+}
+
+.crypto-table {
   max-width: 800px;
   margin: auto;
-  background: linear-gradient(rgba(84,3,255,015, rgba(105,2,153,0.15)));
+  background: rgba(68, 67, 69, 0.15);
   border-radius: 15px;
+  overflow: hidden; /* Rounded corners for child elements */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
-.table-layout{
+
+.table-layout {
   display: grid;
   grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
   padding: 15px 20px;
   align-items: center;
-  border-bottom: 1px solid #3c3c3c;
+  border-bottom: 1px solid #b4a333;
+  background: rgba(255, 255, 255, 0.1); /* Light background for rows */
+  transition: background 0.3s;
 }
-.market-cap{
+
+.table-layout:hover {
+  background: rgba(255, 255, 255, 0.2); /* Highlight on hover */
+}
+
+.market-cap {
   text-align: right;
 }
 
-.table-layout :last-child{
+.table-layout :last-child {
   border: none;
 }
-.table-layout div{
-  display: felx;
+
+.table-layout div {
+  display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.table-layout div img{
+.table-layout div img {
   width: 35px;
+  border-radius: 50%; /* Rounded images for aesthetics */
 }
-.table-layout .green{
+
+.table-layout .green {
   color: #00D515;
   text-align: center;
 }
-.table-layout .red{
+
+.table-layout .red {
   color: #ff4646;
   text-align: center;
 }
 
-@media (max-width: 768px){
-  .table-layout{
+@media (max-width: 768px) {
+  .table-layout {
     grid-template-columns: 0.5fr 3fr 1fr 1fr 1.5fr;
-
   }
-  .market-cap{
+
+  .market-cap {
     display: none;
   }
 }
 
-@media (max-width: 500px){
-  .table-layout div img{
+@media (max-width: 500px) {
+  .table-layout div img {
     width: 25px;
   }
-  .table-layout{
+
+  .table-layout {
     font-size: 13px;
   }
-  .hero form input{
-    width:100px;
+
+  .hero form input {
+    width: 100px;
   }
 }
