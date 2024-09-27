@@ -36,7 +36,6 @@ Welcome to **CryptoTracker**, your ultimate companion for navigating the excitin
      ```bash
     npm run dev
 
-     
 ## Future Work
 
 ### User Accounts and Custom Views
