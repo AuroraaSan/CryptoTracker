@@ -18,6 +18,7 @@ Welcome to **CryptoTracker**, your ultimate companion for navigating the excitin
   - [React Google Charts](https://react-google-charts.com/) for price charts
   - [Material-UI](https://mui.com/) for UI components
   - [Google Fonts API](https://fonts.google.com/)
+  - JSX for templating and dynamic component rendering
 - **Backend:**
   - [Node.js](https://nodejs.org/) for running the backend
   - [CoinGecko API](https://www.coingecko.com/en/api) for fetching live cryptocurrency data
