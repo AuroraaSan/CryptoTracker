@@ -19,6 +19,7 @@ Welcome to **CryptoTracker**, your ultimate companion for navigating the excitin
   - [Material-UI](https://mui.com/) for UI components
   - [Google Fonts API](https://fonts.google.com/)
 - **Backend:**
+  - [Node.js](https://nodejs.org/) for running the backend
   - [CoinGecko API](https://www.coingecko.com/en/api) for fetching live cryptocurrency data
 
 ## Installation
