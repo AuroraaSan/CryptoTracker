@@ -1,7 +1,7 @@
 # CryptoTracker
 
 Welcome to **CryptoTracker**, your ultimate companion for navigating the exciting world of cryptocurrencies! This project provides real-time data on cryptocurrency prices, market trends, and comprehensive analytics to help users make informed investment decisions.
-![Screenshot of CryptoTracker](./cryptoTracker/cryptoweb.png)
+![Screenshot of CryptoTracker](./cryptoweb.png)
 
 
 
